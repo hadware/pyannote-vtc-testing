@@ -1,0 +1,10 @@
+Databases:
+  BABYTRAIN: input/*/{uri}.wav
+Protocols:
+  BABYTRAIN:
+    SpeakerDiarization:
+      babytrain:
+        train:
+          annotation: BABYTRAIN/babytrain.train_test.rttm
+          annotated: BABYTRAIN/babytrain.train_test.uem
+          uri: BABYTRAIN/babytrain.train_test.lst
